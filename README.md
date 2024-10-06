@@ -1,7 +1,7 @@
 # Sandpile Simulations
 
-This repository contains implementations of various sandpile models, demonstrating the concept of self-organized criticality. The simulations are written in JavaScript using the p5.js library for visualization.
-I have shown the difference in the log-log plot that arises from the change in the grid size of the canvas. The plot changes significantly as the grid is increassed from 10*10 to 400*400 pixels.
+This repository contains implementations of various sandpile models, demonstrating the concept of self-organized criticality written in JavaScript using the p5.js library for visualization.
+This project shows the difference in the log-log plot that arises from the change in the grid size of the canvas. The plot changes significantly as the grid is increassed from 10x10 to 400x400 pixels.
 
 ## Table of Contents
 
