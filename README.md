@@ -1,6 +1,7 @@
 # Sandpile Simulations
 
 This repository contains implementations of various sandpile models, demonstrating the concept of self-organized criticality. The simulations are written in JavaScript using the p5.js library for visualization.
+I have shown the difference in the log-log plot that arises from the change in the grid size of the canvas. The plot changes significantly as the grid is increassed from 10*10 to 400*400 pixels.
 
 ## Table of Contents
 
@@ -15,7 +16,7 @@ The basic sandpile model implements a simple 10x10 grid where each cell can cont
 
 ### How it works:
 - Each cell is initialized with a random number of grains (0-3).
-- In each iteration, one grain is added to the center cell.
+- In each iteration, one grain is added to the cell.
 - If a cell contains 4 or more grains, it "topples," distributing one grain to each of its four neighbors.
 - The process continues until the system reaches a stable state.
 
@@ -36,7 +37,7 @@ This plot demonstrates the power-law distribution characteristic of self-organiz
 The sandpile pixel model extends the basic model to a larger grid (400x400 pixels), allowing for more complex patterns and behaviors to emerge.
 
 ### Key improvements:
-- Random drop location within a circular area around the center.
+- Random drop location in the canvas.
 - Pixel-based rendering for improved performance with larger grids.
 - GIF generation to visualize the evolution of the sandpile over time.
 
@@ -59,7 +60,7 @@ This plot may reveal subtle differences in the power-law distribution compared t
 The Abelian sandpile model demonstrates the mathematical properties of sandpiles, particularly the concept that the order of topplings doesn't affect the final state (hence "Abelian").
 
 ### Key features:
-- A large initial pile (2^20 grains) placed at the center.
+- A large initial pile (2^15 grains) placed at the center.
 - Efficient toppling algorithm for handling large numbers of grains.
 - Visualization of the resulting fractal-like patterns.
 
